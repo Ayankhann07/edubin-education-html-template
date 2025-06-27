@@ -575,6 +575,34 @@ p {
     padding-left: 20px;
     color: #ffc600;
 }
+/* Nested submenu (e.g., Finance under M.Com) */
+.sub-menu .sub-menu {
+  left: 100%;
+  top: 0;
+  position: absolute;
+  display: none;
+}
+
+/* Show nested submenu on hover */
+.sub-menu li:hover > .sub-menu {
+  display: block;
+}
+
+/* Optional styling */
+.sub-menu li {
+  position: relative;
+}
+
+.sub-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.sub-menu li a:hover {
+  background-color: #f1f1f1;
+}
 
 .sub-nav-toggler{
     display: none;
@@ -3827,6 +3855,211 @@ p.form-message.error {
 }
 
 
+/* Chairperosn adding styles */
+
+
+#chairperson-message {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-img {
+  max-width: 570px; /* Increased size */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.profile-text {
+  background: #fff;
+  padding: 25px;
+  border-left: 5px solid #003366;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.profile-text h3 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.profile-text p {
+  color: #333;
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+.profile-text h5 {
+  color: #444;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .profile-text {
+    text-align: center;
+  }
+
+  .profile-img {
+    margin: 0 auto 20px;
+  }
+}
+.vision-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;  /* Increased from 1000px */
+  height: 550px;       /* Slightly taller */
+  margin: 0 auto;      /* Center horizontally */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  position: absolute;
+  width: 90%;           /* Increased width */
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vision-carousel {
+    height: 320px;
+  }
+
+  .slide {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-carousel {
+    height: 250px;
+  }
+
+  .slide {
+    width: 100%;
+  }
+}
 
 
 
+/* B.Com Page Styling */
+.bcom-course {
+  background-color: #fdfdfd;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.bcom-course .section-title h2 {
+  font-size: 36px;
+  color: #003366;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#bcom-course .section-title p {
+  color: #555;
+  font-size: 16px;
+}
+
+#bcom-course img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#bcom-course h4 {
+  color: #003366;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+#bcom-course h5 {
+  font-size: 18px;
+  color: #444;
+  margin-top: 20px;
+}
+
+#bcom-course p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+#bcom-course ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+#bcom-course ul li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+#bcom-course ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+#bcom-course .main-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #003366;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+#bcom-course .main-btn:hover {
+  background-color: #0055a5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #bcom-course .section-title h2 {
+    font-size: 28px;
+  }
+
+  #bcom-course h4 {
+    font-size: 20px;
+  }
+
+  #bcom-course .main-btn {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+}
