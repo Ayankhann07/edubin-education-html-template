@@ -4063,3 +4063,127 @@ p.form-message.error {
     font-size: 15px;
   }
 }
+
+
+/* enquiry form css */
+
+/* Enquiry Form Section */
+.enquiry-section {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom right, #eef2f3, #f9f9f9);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.enquiry-section .container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.enquiry-section .container:hover {
+  transform: scale(1.01);
+}
+
+.enquiry-section .form-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+.enquiry-section .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.enquiry-section .form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.enquiry-section .form-group input,
+.enquiry-section .form-group select {
+  padding: 10px 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .enquiry-section .form-group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .enquiry-section .form-group label {
+    flex: 0 0 180px;
+    margin-bottom: 0;
+  }
+
+  .enquiry-section .form-group input,
+  .enquiry-section .form-group select {
+    flex: 1;
+  }
+}
+
+.enquiry-section .submit-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 12px 30px;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  margin-left: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.enquiry-section .submit-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.enquiry-section .submit-btn:active {
+  transform: scale(0.98);
+  background-color: #004a9f;
+}
+
+@media (max-width: 576px) {
+  .enquiry-section .submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 17px;
+  }
+}
+
+
+.foundress-img {
+  height: 330px;       /* Adjust the height as needed */
+  width: auto;         /* Keeps the aspect ratio */
+  object-fit: cover;   /* Ensures it fills the area neatly */
+  border-radius: 10px; /* Optional: rounded corners */
+  display: block;
+  margin: 0 auto;       /* Centers the image horizontally */
+}
+
+@media (max-width: 576px) {
+  .foundress-img {
+    height: 220px;      /* Smaller height on mobile */
+  }
+}
+
+
+.footer-link ul li a {
+  white-space: nowrap;
+}
