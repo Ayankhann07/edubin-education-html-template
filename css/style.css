@@ -4247,3 +4247,29 @@ p.form-message.error {
     display: none;
   }
 }
+
+
+.carousel-inner img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* darker arrows */
+  border-radius: 50%;
+}
+
+
+
+  .focus-list li {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .focus-list li:hover {
+    transform: scale(0.95);
+    background-color: #f8f9fa;
+    padding-left: 8px;
+    border-radius: 4px;
+  }
